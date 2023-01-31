@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>DonutChew</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-icons">
+                <img src="./img/donut.png" alt="donut" class="top-icons-item donut-icon" onclick="itemSelected('donut', 3.5)">
+                
+                <img src="./img/drink.png" alt="drink" class="top-icons-item drink-icon" onclick="itemSelected('drink', 3)">
+                
+                <img src="./img/croffle.png" alt="croffle" class="top-icons-item croffle-icon" onclick="itemSelected('croffle', 4.5)">
+            </div>
+        </div>
+
+
+        <div class="middle">
+                <div class="left">
+                <div class="item-count nothing"></div>
+                <div class="item-count donut" >How Many Donuts?</div>
+    
+                <div class="item-count drink" >How Many Drinks?</div>
+    
+                <div class="item-count croffle" >How Many Croffle?</div>
+                
+                <div class="number-keypad">
+                    <div class="number-line">
+                        <div class="keypad" onclick="keyClick(1)">1</div>
+                        <div class="keypad" onclick="keyClick(2)">2</div>
+                        <div class="keypad" onclick="keyClick(3)">3</div>
+                    </div>
+                    <div class="number-line">
+                        <div class="keypad" onclick="keyClick(4)">4</div>
+                        <div class="keypad" onclick="keyClick(5)">5</div>
+                        <div class="keypad" onclick="keyClick(6)">6</div>
+                    </div>
+                    <div class="number-line">
+                        <div class="keypad" onclick="keyClick(7)">7</div>
+                        <div class="keypad" onclick="keyClick(8)">8</div>
+                        <div class="keypad" onclick="keyClick(9)">9</div>
+                    </div>
+                    <div class="number-line line4">
+                        <div class="keypad" onclick="clearNum(99)">CLR</div>
+                        <div class="keypad" onclick="keyClick(0)">0</div>
+                        <div class="keypad" onclick="subtotal()">OK</div>
+                    </div>
+                </div>
+            </div>
+            <div  class="right">
+                Right
+                <div id='subtotalList'>
+                    here
+                </div>
+            </div>
+        </div>
+
+
+            <div class="bottom">
+                <p>bottom</p>
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
